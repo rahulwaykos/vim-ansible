@@ -2,7 +2,9 @@ hostnamectl set-hostname master
 
 echo "centos" | passwd root --stdin
 
-yum install ansible -y
+yum install ansible vim -y
+
+sh set.sh
 
 echo"
 [cluster]
