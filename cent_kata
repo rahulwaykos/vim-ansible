@@ -1,0 +1,22 @@
+hostnamectl set-hostname master
+
+echo "centos" | passwd root --stdin
+
+yum install ansible -y
+
+echo"
+[cluster]
+master
+" >> /etc/ansible/hosts
+
+hostname -i
+
+read -p "IP : " ip
+
+echo "$ip master" >> /etc/hosts
+
+ssh-keygen
+
+ssh-copy-id master
+
+ 
