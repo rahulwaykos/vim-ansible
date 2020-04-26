@@ -6,7 +6,7 @@ yum install ansible vim -y
 
 sh set.sh
 
-echo"
+echo "
 [cluster]
 master
 " >> /etc/ansible/hosts
